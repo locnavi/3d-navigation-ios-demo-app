@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IndoorNavigationIOSWebSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "IndoorNavigationIOSWebSDK 支持室内定位、室内地图展示、路径规划、导航等功能。"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/locnavi/locnavi-websdk-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/locnavi/3d-navigation-ios-demo-app.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "CoreLocation", "WebKit"
+  spec.frameworks = "CoreLocation", "WebKit", "AVFoundation", "Speech"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
