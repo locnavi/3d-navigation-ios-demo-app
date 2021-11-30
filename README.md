@@ -31,8 +31,9 @@ $ pod install
 	<string>语音识别需要用到麦克风功能</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>请求在App使用期间使用语音识别功能</string>
-  ```
-  
+```
+需要修改DEVELOPMENT_LANGUAGE，若要用繁体则设置Taiwan。影响系统弹框的文字语言。
+
 ## 使用说明
 ### SDK初始化
   在 didFinishLaunchingWithOptions里面添加以下代码即可，appKey为邮件中获取的
