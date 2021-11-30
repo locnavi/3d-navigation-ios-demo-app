@@ -47,7 +47,12 @@
 }
 
 - (IBAction)onShowMap:(UIButton *)btn {
-    LocNaviWebViewController *vc = [[LocNaviWebViewController alloc] initWithMapId:self.tfMapId.text];
+    LocNaviWebViewController *vc;
+    if (self.tfMapId.text && self.tfPoi.text) {
+        vc = [[LocNaviWebViewController alloc] initWithMapId:self.tfMapId.text poi:self.tfPoi.text];
+    } else {
+        vc = [[LocNaviWebViewController alloc] initWithMapId:self.tfMapId.text];
+    }
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }

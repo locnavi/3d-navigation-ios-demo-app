@@ -1,6 +1,6 @@
 # LocNaviWebSDK-iOS
 
-LocNaviWebSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内Web地图应用程序开发接口，供开发者在自己的iOS应用中加入室内地图、定位、导航功能。
+LocNaviWebSDK-iOS 是一套基于 iOS 10.0 及以上版本的室内Web地图应用程序开发接口，供开发者在自己的iOS应用中加入室内地图、定位、导航功能。
 
 ## 获取AppKey
 **appKey mapId targetName targetId 請向richard.chin@locnavi.com 申請**
@@ -8,7 +8,7 @@ LocNaviWebSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内Web地图应�
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
 ```bash
-pod 'IndoorNavigationIOSWebSDK', '~> 0.0.1'
+pod 'IndoorNavigationIOSWebSDK', '~> 0.0.4'
 ```
 然后运行以下命令
 
@@ -52,6 +52,14 @@ $ pod install
 ### 显示室内地图
 ```objective-c
     LocNaviWebViewController *vc = [[LocNaviWebViewController alloc] initWithMapId:@"HHrzBwF5dY"];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+  ```
+
+### 跳转到具体目的地
+传入poi的id，需要跟导航对接过poi数据
+```objective-c
+    LocNaviWebViewController *vc = [[LocNaviWebViewController alloc] initWithMapId:@"HHrzBwF5dY" poi:@"123"];
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
   ```

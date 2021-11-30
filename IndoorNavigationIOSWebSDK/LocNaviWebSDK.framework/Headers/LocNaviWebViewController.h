@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nonnull instancetype)initWithMapId:(nullable NSString *)mapId;
 
+- (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId poi:(nonnull NSString*)poiId;
+
 @end
 
 NS_ASSUME_NONNULL_END
