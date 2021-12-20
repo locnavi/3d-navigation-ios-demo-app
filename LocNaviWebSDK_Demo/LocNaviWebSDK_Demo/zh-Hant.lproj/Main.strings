@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "mapId"; ObjectID = "2bM-oc-NPJ"; */
+"2bM-oc-NPJ.text" = "mapId";
+
+/* Class = "UILabel"; text = "appKey"; ObjectID = "6iN-S1-xJu"; */
+"6iN-S1-xJu.text" = "appKey";
+
+/* Class = "UILabel"; text = "poi"; ObjectID = "G1M-TY-rsE"; */
+"G1M-TY-rsE.text" = "poi";
+
+/* Class = "UIButton"; normalTitle = "进入地图"; ObjectID = "PAN-Xe-Xmy"; */
+"PAN-Xe-Xmy.normalTitle" = "进入地图";
+
+/* Class = "UILabel"; text = "userId"; ObjectID = "dDW-yZ-7bS"; */
+"dDW-yZ-7bS.text" = "userId";
+
+/* Class = "UIButton"; normalTitle = "地图列表"; ObjectID = "drw-Dd-ivM"; */
+"drw-Dd-ivM.normalTitle" = "地图列表";
