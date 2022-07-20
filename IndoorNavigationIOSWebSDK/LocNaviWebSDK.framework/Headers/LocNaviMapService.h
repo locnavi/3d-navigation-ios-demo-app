@@ -14,12 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly)NSString * _Nullable appKey;
 @property (nonatomic, readonly)NSString * _Nullable userId;
+@property (nonatomic, readonly)NSString * _Nullable serverUrl;
 
 + (nonnull instancetype)sharedInstance;
 
 + (void)setAppKey:(nonnull NSString *)appKey;
 
 + (void)setUserId:(nonnull NSString *)userId;
+
++ (void)setServerUrl:(nonnull NSString *)url;
 
 @end
 
