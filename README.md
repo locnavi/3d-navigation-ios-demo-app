@@ -42,6 +42,8 @@ $ pod install
     [LocNaviMapService setAppKey:@"0UbAu9QiDP"];
     //获取到用户信息之后,设置userId即可
     [LocNaviMapService setUserId:@"demo"];
+    //开启定时上传定位功能，需设置UserId
+    [LocNaviMapService setUploadLocationApi:@"https://xxx.com/putinfo" timeInterval:5000];
   ```
 ### 显示医院列表
 ```objective-c

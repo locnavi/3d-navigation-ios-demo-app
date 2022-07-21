@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly)NSString * _Nullable appKey;
 @property (nonatomic, readonly)NSString * _Nullable userId;
 @property (nonatomic, readonly)NSString * _Nullable serverUrl;
+@property (nonatomic, readonly)NSString * _Nullable uploadApi;
+@property (nonatomic, readonly)int uploadTimeInterval;
 
 + (nonnull instancetype)sharedInstance;
 
@@ -23,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserId:(nonnull NSString *)userId;
 
 + (void)setServerUrl:(nonnull NSString *)url;
+
+//设置自动上传定位, 间隔最短1000毫秒一次。需要设置userId才能生效
++ (void)setUploadLocationApi:(nonnull NSString *)api timeInterval:(int)time;
 
 @end
 

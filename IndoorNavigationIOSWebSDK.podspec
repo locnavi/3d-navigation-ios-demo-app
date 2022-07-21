@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IndoorNavigationIOSWebSDK"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "IndoorNavigationIOSWebSDK 支持室内定位、室内地图展示、路径规划、导航等功能。"
 
   # This description is used to generate tags and improve search results.
